@@ -1,0 +1,197 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  scroll-behavior: smooth;
+  cursor: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+body,
+input,
+ul,
+li,
+button {
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#cursor {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: gray;
+  border-radius: 100%;
+  pointer-events: none;
+  z-index: 999;
+}
+
+header {
+  width: 100%;
+  height: 10vh;
+  background-color: black;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header h1 {
+  margin-left: 40px;
+  text-transform: uppercase;
+}
+
+header ul {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+  margin-right: 40px;
+}
+
+header ul li {
+  padding: 0;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+header ul li a:hover {
+  cursor: none;
+}
+
+main {
+  width: 100%;
+}
+
+main .hide {
+  display: none !important;
+}
+
+main #folder-effect {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+main #folder-effect button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 1.25rem;
+}
+
+main #folder-effect button:hover {
+  cursor: none;
+}
+
+main section:nth-child(2n+1) {
+  background-color: black;
+  color: white;
+}
+
+main section {
+  padding: 4vh 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main section h2 {
+  margin-bottom: 2vh;
+}
+
+main section p {
+  text-align: justify;
+}
+
+main section img {
+  width: 50%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 2vh;
+}
+
+main #storyboard img {
+  width: 90%;
+}
+
+main #plus {
+  width: auto;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border: 4px solid white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+main #plus #close-btn {
+  width: 100%;
+  text-align: right;
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+main #plus #close-btn:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,163 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    scroll-behavior: smooth;
+    cursor: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+body,
+input,
+ul,
+li,
+button {
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#cursor {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: gray;
+    border-radius: 100%;
+    pointer-events: none;
+    z-index: 999;
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+        margin-left: 40px;
+        text-transform: uppercase;
+    }
+
+    ul {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        margin-right: 40px;
+
+        li {
+            padding: 0;
+
+            a {
+                text-decoration: none;
+                color: white;
+
+                &:hover {
+                    cursor: none;
+                }
+            }
+        }
+    }
+}
+
+main {
+    width: 100%;
+
+    .hide {
+        // j'aime pas !important mais bon ...
+        display: none !important;
+    }
+
+    #folder-effect {
+        align-self: center;
+
+        button {
+            background-color: transparent;
+            color: white;
+            border: none;
+            font-size: 1.25rem;
+
+            &:hover {
+                cursor: none;
+            }
+        }
+    }
+
+    section:nth-child(2n+1) {
+        background-color: black;
+        color: white;
+    }
+
+    section {
+        padding: 4vh 40px;
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            margin-bottom: 2vh;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        img {
+            width: 50%;
+            align-self: center;
+            margin-bottom: 2vh;
+        }
+    }
+
+    #storyboard {
+        img {
+            width: 90%;
+        }
+    }
+
+    #plus {
+        width: auto;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        border: 4px solid white;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        #close-btn {
+            width: 100%;
+            text-align: right;
+            background-color: transparent;
+            border: none;
+            color: white;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
